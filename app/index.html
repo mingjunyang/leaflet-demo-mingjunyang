@@ -1,0 +1,105 @@
+<!doctype html>
+<!--[if lt IE 9]> <html class="no-js lt-ie9" lang="en" ng-app="MingjunYang.Lmap"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Feilan Map</title>
+    <meta name="description" content="Feilan Map">
+
+    <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/2.2.0/es5-shim.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
+<![endif]-->
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+    <!-- Author of this application -->
+    <link rel="author" href="Feilan">
+    <link rel="icon" href="http://angularjs.org/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://angularjs.org/favicon.ico" type="image/x-icon">
+
+    <!-- build:css styles/components.min.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/leaflet.min.css -->
+    <link rel="stylesheet" href="styles/leaflet.draw.css">
+    <link rel="stylesheet" href="styles/Leaflet.StyleEditor.css">
+    <link rel="stylesheet" href="styles/leaflet.label.css">
+    <link rel="stylesheet" href="styles/leaflet-search.src.css">
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.min.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <style type="text/css">
+    #map {
+        position: absolute;
+        top: 0;
+        margin: 60px 0 0 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    ul:first-child {
+        margin-top: 20px;
+    }
+    li:hover {
+        background-color: #fedcba
+    }
+    </style>
+</head>
+
+<body ontouchstart>
+
+    <div id="rightbar1" class="col-md-2 pull-left" style="background-color:#abcdef;position:fixed;top:0; ;height:60px;">鼠标移动到这里出现选择列表，单击这里列表消失</div>
+
+    <div id="rightbar2" class="col-md-2 pull-right" style="background-color:#abcdef;position:fixed;top:0;right:0;height:60px;"></div>
+
+    <div id="rightbar" class=" col-md-4 pull-left" style="position:fixed; overflow:auto;z-index:1024;background-color:#abcdef;margin-top:60px 0 60px 0;height:95%">
+    </div>
+    <div id="leftbar" class="col-md-2 pull-left" style="; overflow:auto;z-index:1024;
+    ;margin-top:0 0 60px 0; top:60px">
+        <ul class="list-group">
+        </ul>
+    </div>
+    <div id="map"></div>
+
+    <!-- build:js scripts/components.min.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/leaflet/dist/leaflet.js"></script>
+    <script src="bower_components/leaflet/dist/leaflet-src.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/app.min.js -->
+    <script src="scripts/leafletmap.js"></script>
+    <script src="scripts/leaflet.ChineseTmsProviders.js"></script>
+    <script src="scripts/leaflet.draw-src.js"></script>
+    <script src="scripts/leaflet.ajax.js"></script>
+    <script src="scripts/easy-button.js"></script>
+    <script src="scripts/leaflet.layerindex.js"></script>
+    <script src="scripts/Leaflet.StyleEditor.js"></script>
+    <script src="scripts/Leaflet.StyleForms.js"></script>
+    <script src="scripts/leaflet.label-src.js"></script>
+    <script src="scripts/leaflet-search.src.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- build:js scripts/thirdpart.min.js -->
+    <script src="scripts/rtree.js"></script>
+    <script src="scripts/json2.js"></script>
+    <script src="scripts/mysearch.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

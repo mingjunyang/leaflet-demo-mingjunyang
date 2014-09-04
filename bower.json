@@ -1,0 +1,29 @@
+{
+  "name": "Lmap",
+  "version": "0.1.0",
+  "description": "Yet another amazing AngularJS app",
+  "keywords": [
+    "angular"
+  ],
+  "homepage": "",
+  "bugs": "",
+  "author": {
+    "name": "Feilan",
+    "email": "",
+    "url": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "dependencies": {
+    "bootstrap": "3.2.0",
+    "leaflet": "~0.7.3",
+    "jquery": "~2.1.1"
+  }
+}
