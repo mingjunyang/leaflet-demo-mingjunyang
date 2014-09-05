@@ -45,6 +45,8 @@
     "grunt-rev": "^0.1.0",
     "grunt-usemin": "^2.1.1",
     "jshint-stylish": "^0.2.0",
-    "load-grunt-tasks": "^0.4.0"
+    "load-grunt-tasks": "^0.4.0",
+    "grunt-contrib-imagemin": "~0.8.1",
+    "jpegtran-bin": "~1.0.1"
   }
 }

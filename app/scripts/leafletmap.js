@@ -17,7 +17,7 @@ $(document).ready(function() {
     // }).addTo(map);
 
     //加载自定义的WMS服务，注意CRS设置，如果不匹配，会显现不出图层的
-    L.tileLayer.wms("http://127.0.0.1:8080/geoserver/aust/wms", {
+    L.tileLayer.wms("http://42.62.73.155/geoserver/aust/wms", {
         layers: 'aust:aust2',
         format: 'image/png',
         transparent: true,
